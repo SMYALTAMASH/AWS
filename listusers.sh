@@ -20,12 +20,6 @@ do
 			key2_date=$(date '+%Y-%m-%d')
                         key_age=$(date -d  "$key_date" '+%s')
                         key2_age=$(date -d  "$key2_date" '+%s')
-			#if [ "$key2_age" -gt "$key_age" ]
-			#then
-			#	finalAge=$(echo "scale=2; ( $key2_age - $key_age )/(60*60*24)" | bc)
-			#else
-			#	finalAge=$(echo "scale=2; ( $key_age - $key2_age )/(60*60*24)" | bc)	
-			#fi
 			finalAge=$(echo "scale=2; ( $key2_age - $key_age )/(60*60*24)" | bc)
 			keys[id]=$(aws iam list-access-keys --user-name $user --query "AccessKeyMetadata[$run].AccessKeyId" --output text)
 			keys[age]=$(aws iam list-access-keys --user-name $user --query "AccessKeyMetadata[$run].CreateDate" --output text | tr "T" "-" | tr -d "Z" )
