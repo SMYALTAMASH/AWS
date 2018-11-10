@@ -1,3 +1,5 @@
+THE KING NEVER FAILS TO WIN HIS DESTINY
+
 ---------------------------------------------------------------------------
 
 File: s3query.sh
