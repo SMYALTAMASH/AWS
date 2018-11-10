@@ -90,4 +90,4 @@ sudo apt-get update && sudo apt-get install azure-cli
 
 
 #upload contents to azure blob
-az storage blob upload-batch -d master -s /s3/bucket-mount/* --account-name sunbird1p7 --account-key O43LOh2sCJS9bOfU9gq8nFZ/lvVafFYjP/06q+IZglwzWaueFscDxXoMs7UUMPMRxu36nM1SCH4wjKDwNhGhiQ==
+az storage blob upload-batch -d master -s /s3/bucket-mount/* --account-name sunbird1p7 --account-key azureBlobKey
